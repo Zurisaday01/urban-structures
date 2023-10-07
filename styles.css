@@ -359,7 +359,12 @@ li.fade {
 	}
 
 	.form {
-		width: 100%;
+		min-width: 100%;
 		min-height: 50rem;
+		padding: 3rem;
+	}
+
+	.form__group {
+		width: 90vw;
 	}
 }
