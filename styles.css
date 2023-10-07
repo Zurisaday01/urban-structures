@@ -367,4 +367,8 @@ li.fade {
 	.form__group {
 		width: 90vw;
 	}
+
+	.form__options {
+		width: 90vw;
+	}
 }
