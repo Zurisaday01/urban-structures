@@ -8,6 +8,10 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Maven+Pro:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
 			rel="stylesheet" />
+		<!-- FONTAWESOME -->
+		<script
+			src="https://kit.fontawesome.com/4947cde923.js"
+			crossorigin="anonymous"></script>
 		<!-- JS -->
 		<script src="app.js" defer></script>
 		<!-- MY STYLES -->
@@ -17,10 +21,10 @@
 	<body class="container">
 		<header class="header">
 			<nav class="nav">
-				<div class="logo">
+				<a class="logo" href="/">
 					<img class="logo__img" src="./assets/logo.svg" alt="Logo Image" />
 					<span class="logo__text">Urban structures</span>
-				</div>
+				</a>
 				<div class="hamburger">
 					<!-- toggle -->
 					<div class="line1"></div>
@@ -28,9 +32,15 @@
 					<div class="line3"></div>
 				</div>
 				<ul class="nav__links">
-					<li><a href="#">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Services</a></li>
+					<li class="contact-us__btn">
+						<a href="./contact-us.html">
+							<i class="fa-solid fa-phone"></i>
+							<span>Contact Us</span>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</header>

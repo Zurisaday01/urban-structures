@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/assets/logo.svg" />
+		<!-- GOOGLE FONTS -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Maven+Pro:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+			rel="stylesheet" />
+		<!-- FONTAWESOME -->
+		<script
+			src="https://kit.fontawesome.com/4947cde923.js"
+			crossorigin="anonymous"></script>
+		<!-- JS -->
+		<script src="app.js" defer></script>
+		<!-- MY STYLES -->
+		<link rel="stylesheet" href="styles.css" />
+		<title>Urban structures</title>
+	</head>
+	<body class="container">
+		<header class="header">
+			<nav class="nav">
+				<a class="logo" href="/">
+					<img class="logo__img" src="./assets/logo.svg" alt="Logo Image" />
+					<span class="logo__text">Urban structures</span>
+				</a>
+				<div class="hamburger">
+					<!-- toggle -->
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<ul class="nav__links">
+					<li><a href="/">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Services</a></li>
+					<li class="contact-us__btn">
+						<a href="./contact-us.html">
+							<i class="fa-solid fa-phone"></i>
+							<span>Contact Us</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="contact-us">
+			<div class="contact-us__main">
+				<div>
+					<h1 class="heading_primary">Contact Us</h1>
+					<p>Let's Build Together: Get in Touch</p>
+				</div>
+				<div class="contact-us__info">
+					<div class="contact-us__info-item">
+						<h2 class="heading_secondary">Contact Us</h2>
+						<p>Main Office: (555) 123-4567</p>
+						<p>Sales Enquiries: (555) 987-6543</p>
+					</div>
+					<div class="contact-us__info-item">
+						<h2 class="heading_secondary">Our Address</h2>
+						<address>
+							123 Construction Avenue<br />
+							Cityville, State 12345<br />
+							United States
+						</address>
+					</div>
+				</div>
+			</div>
+			<form class="form">
+				<div class="form__group">
+					<label class="form__label" for="name">Name</label>
+					<input
+						class="form__input"
+						type="text"
+						id="name"
+						name="name"
+						required />
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="email">Email</label>
+					<input
+						class="form__input"
+						type="text"
+						id="email"
+						name="email"
+						required />
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="message">Message</label>
+					<textarea
+						class="form__input"
+						id="message"
+						name="message"
+						rows="4"
+						required></textarea>
+				</div>
+
+				<div class="form__options">
+					<button class="form__submit" type="submit">Submit</button>
+					<button class="form__cancel" type="reset">Cancel</button>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
