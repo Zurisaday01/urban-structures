@@ -27,6 +27,7 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%; /* 10px  */
 	height: 100vh;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -394,7 +395,7 @@ li.fade {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 9999;
+	z-index: 1111111;
 	backdrop-filter: blur(8px);
 }
 
@@ -466,7 +467,8 @@ li.fade {
 
 .heading--primary {
 	color: var(--light-color);
-	font-size: 6rem;
+	font-size: clamp(4rem, 6vw, 3vw);
+	margin-bottom: 3rem;
 }
 
 .button {
@@ -490,6 +492,14 @@ li.fade {
 	line-height: 42px;
 	padding: 0;
 	border: none;
+}
+
+.button a {
+	text-decoration: none;
+	color: currentColor;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .button span {
@@ -560,7 +570,8 @@ li.fade {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 30rem;
+	width: 25rem;
+	min-width: 20rem;
 }
 
 .strength-card h3 {
@@ -597,8 +608,8 @@ li.fade {
 }
 
 .project-card__img {
-	width: 35rem;
-	height: 40rem;
+	width: 25rem;
+	height: 30rem;
 }
 .project-card__img img {
 	object-fit: cover;
@@ -627,7 +638,6 @@ li.fade {
 .main section {
 	margin: 0 auto;
 	max-width: 120rem;
-	padding: 0 2rem;
 }
 
 .section-strengths {
@@ -641,7 +651,7 @@ li.fade {
 	width: 100%;
 	display: grid;
 	gap: 3rem;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	justify-items: center;
 }
 
@@ -652,7 +662,7 @@ li.fade {
 .projects_list {
 	display: grid;
 	gap: 3rem;
-	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	justify-items: center;
 }
 
