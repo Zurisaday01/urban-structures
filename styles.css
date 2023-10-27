@@ -282,9 +282,8 @@ li.fade {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
 		padding: 10rem 4rem 4rem 4rem;
-		gap: 25rem;
+		gap: 20vw;
 		flex: 1;
 	}
 }
