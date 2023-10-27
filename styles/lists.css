@@ -1,0 +1,21 @@
+.strengths_list {
+	width: 100%;
+	display: grid;
+	gap: 3rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	justify-items: center;
+}
+
+.projects_list {
+	display: grid;
+	gap: 3rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	justify-items: center;
+}
+
+.testimonials_list {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	justify-items: center;
+}

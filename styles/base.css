@@ -1,0 +1,39 @@
+/* CSS VARIABLES */
+:root {
+	/* COLORS */
+	--primary-color: #65451f;
+	--primary-dark-color: #382712;
+	--secondary-color: #eac696;
+	--light-color: #ffff;
+	--gray-dark: #606060;
+
+	/* FONT FAMILY */
+	--heading-font: 'Josefin Sans', sans-serif;
+	--body-font: 'Nunito Sans', sans-serif;
+	--logo-font: 'Maven Pro', sans-serif;
+}
+
+/* LOGO */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 10px  */
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--body-font);
+	line-height: 1.7;
+	font-size: 1.6rem;
+	color: var(--gray-dark);
+	height: 100vh;
+}

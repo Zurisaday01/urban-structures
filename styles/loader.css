@@ -1,0 +1,47 @@
+.loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1111111;
+	backdrop-filter: blur(8px);
+}
+
+.loader {
+	display: block;
+	z-index: 99;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8rem;
+	height: 8rem;
+	border: 5px solid white;
+	border-radius: 100%;
+	animation: spin 7s ease-in-out;
+	animation-iteration-count: infinite;
+	transition-duration: 0.2s;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+		border-bottom: solid 3px transparent;
+		border-top: solid 3px transparent;
+	}
+	50% {
+		transform: rotate(1800deg);
+		border: 3px solid white;
+		border-left: solid 3px transparent;
+		border-right: solid 3px transparent;
+	}
+	100% {
+		/*Reversed spinning*/
+		transform: rotate(0deg);
+		border-bottom: solid 3px transparent;
+		border-top: solid 3px transparent;
+	}
+}

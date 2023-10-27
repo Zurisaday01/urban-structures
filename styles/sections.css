@@ -1,0 +1,28 @@
+.main {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+	padding-top: 8rem;
+}
+
+.main section {
+	margin: 0 auto;
+	max-width: 120rem;
+}
+
+.section-strengths {
+	width: 100%;
+}
+.section-strengths .header-section {
+	text-align: center;
+}
+
+.section-projects {
+	width: 100%;
+}
+
+.section-testimonials {
+	width: 100%;
+	padding-bottom: 4rem;
+}

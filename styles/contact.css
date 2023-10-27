@@ -1,0 +1,155 @@
+.contact-us {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-us__main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 12rem 4rem 4rem 8rem;
+	justify-content: space-between;
+}
+
+@media (max-width: 1070px) {
+	.contact-us__main {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		padding: 12rem 4rem 4rem 5rem;
+		justify-content: space-between;
+	}
+}
+
+
+.contact-us__info {
+	display: flex;
+	justify-content: space-between;
+	gap: 3rem;
+	align-items: center;
+}
+
+@media (max-width: 1070px) {
+	.contact-us__info {
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+	}
+}
+
+/* form */
+.form {
+	width: 50%;
+	background-color: var(--secondary-color);
+	min-height: calc(100vh - 8rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.form__group {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	width: 40rem;
+}
+
+.form__label {
+	font-family: var(--heading-font);
+	color: var(--primary-color);
+}
+
+.form__input {
+	padding: 1rem;
+	border: none;
+	outline: none;
+	font-family: var(--body-font);
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+
+textarea {
+	resize: none;
+}
+
+.form__input:active,
+.form__input:hover {
+	outline: 2px solid var(--primary-color);
+	outline-offset: 2px;
+}
+
+.form__options {
+	display: flex;
+	justify-content: end;
+	width: 40rem;
+	gap: 1.5rem;
+}
+
+.form__options .form__submit {
+	padding: 1rem 2rem;
+	border-radius: 4rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	color: var(--light-color);
+	transition: all 0.3s;
+}
+
+.form__options .form__submit:hover {
+	background-color: var(--primary-dark-color);
+}
+
+.form__options .form__cancel {
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid var(--primary-color);
+	transition: all 0.3s;
+}
+
+.form__options .form__cancel:hover {
+	background-color: var(--primary-color);
+	border: 2px solid transparent;
+	color: var(--light-color);
+}
+
+@media (max-width: 920px) {
+	.contact-us {
+		flex: 1;
+	}
+	.contact-us__main {
+		gap: 3rem;
+	}
+
+	.contact-us__info {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.contact-us {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.form {
+		min-width: 100%;
+		min-height: 50rem;
+		padding: 3rem;
+	}
+
+	.form__group {
+		width: 90vw;
+	}
+
+	.form__options {
+		width: 90vw;
+	}
+}
