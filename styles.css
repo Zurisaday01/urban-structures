@@ -306,7 +306,7 @@ li.fade {
 .images-pair {
 	position: relative;
 	width: min-content;
-	transform: translateX(-8rem);
+	transform: translateX(-6rem);
 }
 
 .images-pair__img {
