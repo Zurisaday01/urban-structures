@@ -27,24 +27,62 @@
 		</div>
 		<header class="header">
 			<nav class="nav">
+				<!-- LOGO -->
 				<a class="logo" href="/">
 					<img class="logo__img" src="./assets/logo.png" alt="Logo Image" />
 					<span class="logo__text">Urban structures</span>
 				</a>
-				<div class="hamburger">
-					<!-- toggle -->
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
+				<!-- NAVIGATION -->
+				<div class="navigation">
+					<input
+						type="checkbox"
+						class="navigation__checkbox"
+						id="navi-toggle" />
+
+					<label for="navi-toggle" class="navigation__button">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</label>
+
+					<div class="navigation__background">&nbsp;</div>
+
+					<nav class="navigation__nav">
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="/" class="navigation__link">Home</a>
+							</li>
+							<li class="navigation__item">
+								<a href="/about-us.html" class="navigation__link">About Us</a>
+							</li>
+							<li class="navigation__item">
+								<a href="/services.html" class="navigation__link">Services</a>
+							</li>
+							<li class="navigation__item">
+								<a href="/contact-us.html" class="navigation__link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<ul class="nav__links">
-					<li><a href="/">Home</a></li>
-					<li><a href="./about-us.html">About Us</a></li>
-					<li><a href="./services.html">Services</a></li>
-					<li class="contact-us__btn">
-						<a href="./contact-us.html"> Contact Us </a>
-					</li>
-				</ul>
+
+				<div class="navigation-desktop">
+					<nav class="navigation-desktop__nav">
+						<ul class="navigation-desktop__list">
+							<li class="navigation-desktop__item">
+								<a href="/" class="navigation-desktop__link">Home</a>
+							</li>
+							<li class="navigation-desktop__item">
+								<a href="/about-us.html" class="navigation-desktop__link">About Us</a>
+							</li>
+							<li class="navigation-desktop__item">
+								<a href="/services.html" class="navigation-desktop__link">Services</a>
+							</li>
+							<li class=navigation-desktop__item">
+								<a href="/contact-us.html" class="navigation-desktop__link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</nav>
 		</header>
 		<div class="hero">

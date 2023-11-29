@@ -1,6 +1,6 @@
 'use strict'
 
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".navigation__button");
 const navLinks = document.querySelector(".nav__links");
 const links = document.querySelectorAll(".nav__links li");
 const loaderOverlay = document.querySelector('.loader-overlay');
@@ -11,12 +11,6 @@ const locationBtn = document.getElementById('location-btn')
 // Hamburger --------------
 // ------------------------
 const handleHamburger = () => {
-    //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
-
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
 }
