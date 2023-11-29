@@ -75,6 +75,7 @@ li.fade {
 		clip-path: none;
 		height: auto;
 		width: 100%;
+		transition: none;
 		justify-content: end;
 	}
 

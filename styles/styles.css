@@ -6,6 +6,7 @@
 @import url('sections.css');
 @import url('lists.css');
 @import url('contact.css');
+@import url('services.css');
 @import url('about.css');
 
 /* body (CONTAINER) */
@@ -24,20 +25,27 @@
 }
 
 .logo .logo__img {
-	width: 3rem;
+	width: 5rem;
 }
 
 .logo .logo__text {
+	margin-top: 5px;
 	font-family: var(--logo-font);
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	color: var(--primary-color);
 }
 
 @media (min-width: 900px) {
 	.logo .logo__text {
 		width: 30rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.logo .logo__text {
+		display: none;
 	}
 }
 
@@ -52,7 +60,6 @@
 	color: var(--primary-color);
 	font-size: 1.5rem;
 }
-
 
 /* hero */
 .hero {

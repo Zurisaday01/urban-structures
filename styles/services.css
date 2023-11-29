@@ -1,0 +1,15 @@
+.services {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 12rem 2.5rem 2.5rem 2.5rem;
+	gap: 10rem;
+	flex: 1;
+}
+
+.services__container {
+    margin: 0 auto;
+    max-width: 120rem;;
+}

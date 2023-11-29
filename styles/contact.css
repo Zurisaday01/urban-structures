@@ -21,7 +21,6 @@
 	}
 }
 
-
 .contact-us__info {
 	display: flex;
 	justify-content: space-between;
@@ -54,6 +53,25 @@
 	flex-direction: column;
 	text-align: start;
 	width: 40rem;
+}
+
+.form__group--location {
+	position: relative;
+}
+
+.location__btn {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 1rem;
+	border: none;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	transition: all 0.3s;
 }
 
 .form__label {

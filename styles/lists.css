@@ -19,3 +19,29 @@
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	justify-items: center;
 }
+
+.services_list {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(3, 20rem);
+	justify-items: center;
+}
+
+@media (max-width: 1300px) {
+	.services_list {
+		grid-template-rows: repeat(4, 20rem);
+	}
+}
+
+@media (max-width: 945px) {
+	.services_list {
+		grid-template-rows: min-content repeat(3, max-content);
+	}
+}
+
+@media (max-width: 700px) {
+	.services_list {
+		grid-template-rows: min-content repeat(6, max-content);
+	}
+}
